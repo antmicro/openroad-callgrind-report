@@ -1,8 +1,23 @@
-# Callgrind flamegraphs
+# Performance summary
+
+## Design build time for OpenROAD releases
+
+The graph shown below shows time spent on building each design for various releases of the OpenROAD project.
+The horizontal axis represents build data along with SHA of the commit from https://github.com/the-OpenROAD-Project/OpenROAD.
+
+Each bar shows time spent on various stages of the OpenROAD design building.
+
+:::{figure-md} comparison-of-releases
+![Comparison of releases](./comparison-of-releases.png)
+
+Comparison of OpenROAD releases
+:::
+
+## Callgrind flamegraphs
 
 
 
-## ariane
+### ariane
 
 
 * <a href="_static/speedscope/index.html#profileURL=callgrind/ariane/1052266_2_1_floorplan_callgrind.out&title=ariane 2_1_floorplan 1052266">2_1_floorplan</a>
@@ -47,7 +62,7 @@
 
 
 
-## black_parrot
+### black_parrot
 
 
 * <a href="_static/speedscope/index.html#profileURL=callgrind/black_parrot/1052267_2_1_floorplan_callgrind.out&title=black_parrot 2_1_floorplan 1052267">2_1_floorplan</a>
@@ -92,7 +107,7 @@
 
 
 
-## ibex
+### ibex
 
 
 * <a href="_static/speedscope/index.html#profileURL=callgrind/ibex/1052268_2_1_floorplan_callgrind.out&title=ibex 2_1_floorplan 1052268">2_1_floorplan</a>
@@ -140,7 +155,7 @@
 
 
 
-## tinyRocket
+### tinyRocket
 
 
 * <a href="_static/speedscope/index.html#profileURL=callgrind/tinyRocket/1052269_2_1_floorplan_callgrind.out&title=tinyRocket 2_1_floorplan 1052269">2_1_floorplan</a>

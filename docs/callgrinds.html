@@ -13,7 +13,7 @@
     
     
       
-        <title>Callgrind flamegraphs - OpenROAD callgrind report</title>
+        <title>Performance summary - OpenROAD performance report</title>
       
     
     
@@ -71,7 +71,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="index.html" title="OpenROAD callgrind report" class="md-header__button md-logo" aria-label="OpenROAD callgrind report" data-md-component="logo">
+    <a href="index.html" title="OpenROAD performance report" class="md-header__button md-logo" aria-label="OpenROAD performance report" data-md-component="logo">
       <img src="_static/white.svg" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -81,13 +81,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            OpenROAD callgrind report
+            OpenROAD performance report
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Callgrind flamegraphs
+              Performance summary
             
           </span>
         </div>
@@ -181,10 +181,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="OpenROAD callgrind report" class="md-nav__button md-logo" aria-label="OpenROAD callgrind report" data-md-component="logo">
+    <a href="index.html" title="OpenROAD performance report" class="md-nav__button md-logo" aria-label="OpenROAD performance report" data-md-component="logo">
       <img src="_static/white.svg" alt="logo">
     </a>
-    OpenROAD callgrind report
+    OpenROAD performance report
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -206,12 +206,12 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          <span class="md-ellipsis">Callgrind flamegraphs</span>
+          <span class="md-ellipsis">Performance summary</span>
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="#" class="md-nav__link md-nav__link--active">
-        <span class="md-ellipsis">Callgrind flamegraphs</span>
+        <span class="md-ellipsis">Performance summary</span>
       </a>
       
         
@@ -229,30 +229,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#design-build-time-for-openroad-releases" class="md-nav__link">
+    <span class="md-ellipsis">Design build time for Open<wbr>ROAD releases</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#callgrind-flamegraphs" class="md-nav__link">
+    <span class="md-ellipsis">Callgrind flamegraphs</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Callgrind flamegraphs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#ariane" class="md-nav__link">
     <span class="md-ellipsis">ariane</span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#black-parrot" class="md-nav__link">
     <span class="md-ellipsis">black_<wbr>parrot</span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#ibex" class="md-nav__link">
     <span class="md-ellipsis">ibex</span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#tinyrocket" class="md-nav__link">
     <span class="md-ellipsis">tiny<wbr>Rocket</span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -278,8 +298,19 @@
                   
 
 
-<h1 id="callgrind-flamegraphs">Callgrind flamegraphs<a class="headerlink" href="#callgrind-flamegraphs" title="Link to this heading">¶</a></h1>
-<h2 id="ariane">ariane<a class="headerlink" href="#ariane" title="Link to this heading">¶</a></h2>
+<h1 id="performance-summary">Performance summary<a class="headerlink" href="#performance-summary" title="Link to this heading">¶</a></h1>
+<h2 id="design-build-time-for-openroad-releases">Design build time for OpenROAD releases<a class="headerlink" href="#design-build-time-for-openroad-releases" title="Link to this heading">¶</a></h2>
+<p>The graph shown below shows time spent on building each design for various releases of the OpenROAD project.
+The horizontal axis represents build data along with SHA of the commit from https://github.com/the-OpenROAD-Project/OpenROAD.</p>
+<p>Each bar shows time spent on various stages of the OpenROAD design building.</p>
+<figure class="align-default" id="comparison-of-releases">
+<img alt="Comparison of releases" src="_images/comparison-of-releases.png" />
+<figcaption>
+<p><span class="caption-number">Figure 1 </span><span class="caption-text"><span class="caption-text">
+Comparison of OpenROAD releases</span><a class="headerlink" href="#comparison-of-releases" title="Permalink to this image">¶</a></figcaption>
+</figure>
+<h2 id="callgrind-flamegraphs">Callgrind flamegraphs<a class="headerlink" href="#callgrind-flamegraphs" title="Link to this heading">¶</a></h2>
+<h3 id="ariane">ariane<a class="headerlink" href="#ariane" title="Link to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><a href="_static/speedscope/index.html#profileURL=callgrind/ariane/1052266_2_1_floorplan_callgrind.out&title=ariane 2_1_floorplan 1052266">2_1_floorplan</a></p></li>
 <li><p><a href="_static/speedscope/index.html#profileURL=callgrind/ariane/1052266_2_2_floorplan_io_callgrind.out&title=ariane 2_2_floorplan_io 1052266">2_2_floorplan_io</a></p></li>
@@ -295,7 +326,7 @@
 <li><p><a href="_static/speedscope/index.html#profileURL=callgrind/ariane/1052266_5_1_grt_callgrind.out&title=ariane 5_1_grt 1052266">5_1_grt</a></p></li>
 <li><p><a href="_static/speedscope/index.html#profileURL=callgrind/ariane/1052266_5_2_fillcell_callgrind.out&title=ariane 5_2_fillcell 1052266">5_2_fillcell</a></p></li>
 </ul>
-<h2 id="black-parrot">black_parrot<a class="headerlink" href="#black-parrot" title="Link to this heading">¶</a></h2>
+<h3 id="black-parrot">black_parrot<a class="headerlink" href="#black-parrot" title="Link to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><a href="_static/speedscope/index.html#profileURL=callgrind/black_parrot/1052267_2_1_floorplan_callgrind.out&title=black_parrot 2_1_floorplan 1052267">2_1_floorplan</a></p></li>
 <li><p><a href="_static/speedscope/index.html#profileURL=callgrind/black_parrot/1052267_2_2_floorplan_io_callgrind.out&title=black_parrot 2_2_floorplan_io 1052267">2_2_floorplan_io</a></p></li>
@@ -311,7 +342,7 @@
 <li><p><a href="_static/speedscope/index.html#profileURL=callgrind/black_parrot/1052267_5_1_grt_callgrind.out&title=black_parrot 5_1_grt 1052267">5_1_grt</a></p></li>
 <li><p><a href="_static/speedscope/index.html#profileURL=callgrind/black_parrot/1052267_5_2_fillcell_callgrind.out&title=black_parrot 5_2_fillcell 1052267">5_2_fillcell</a></p></li>
 </ul>
-<h2 id="ibex">ibex<a class="headerlink" href="#ibex" title="Link to this heading">¶</a></h2>
+<h3 id="ibex">ibex<a class="headerlink" href="#ibex" title="Link to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><a href="_static/speedscope/index.html#profileURL=callgrind/ibex/1052268_2_1_floorplan_callgrind.out&title=ibex 2_1_floorplan 1052268">2_1_floorplan</a></p></li>
 <li><p><a href="_static/speedscope/index.html#profileURL=callgrind/ibex/1052268_2_2_floorplan_io_callgrind.out&title=ibex 2_2_floorplan_io 1052268">2_2_floorplan_io</a></p></li>
@@ -328,7 +359,7 @@
 <li><p><a href="_static/speedscope/index.html#profileURL=callgrind/ibex/1052268_5_1_grt_callgrind.out&title=ibex 5_1_grt 1052268">5_1_grt</a></p></li>
 <li><p><a href="_static/speedscope/index.html#profileURL=callgrind/ibex/1052268_5_2_fillcell_callgrind.out&title=ibex 5_2_fillcell 1052268">5_2_fillcell</a></p></li>
 </ul>
-<h2 id="tinyrocket">tinyRocket<a class="headerlink" href="#tinyrocket" title="Link to this heading">¶</a></h2>
+<h3 id="tinyrocket">tinyRocket<a class="headerlink" href="#tinyrocket" title="Link to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><a href="_static/speedscope/index.html#profileURL=callgrind/tinyRocket/1052269_2_1_floorplan_callgrind.out&title=tinyRocket 2_1_floorplan 1052269">2_1_floorplan</a></p></li>
 <li><p><a href="_static/speedscope/index.html#profileURL=callgrind/tinyRocket/1052269_2_2_floorplan_io_callgrind.out&title=tinyRocket 2_2_floorplan_io 1052269">2_2_floorplan_io</a></p></li>
@@ -351,7 +382,7 @@
   <small>
     
       Last update:
-      2024-03-25
+      2024-03-28
     
   </small>
 </div>
@@ -375,7 +406,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: OpenROAD callgrind report" rel="prev">
+        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: OpenROAD performance report" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -384,7 +415,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              OpenROAD callgrind report
+              OpenROAD performance report
             </div>
           </div>
         </a>
